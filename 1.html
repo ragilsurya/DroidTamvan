@@ -1,8 +1,27 @@
-<script type="text/javascript">
-  (sc_adv_out = window.sc_adv_out || []).push({
-    id : "625365",
-    domain : "n.ads3-adnow.com"
-  });
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Facebook Like Box</title>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<body>
+<script id="spout-tag-39633299-9ffc-4c53-ba0b-ca280162c65a">
+  (function() {
+    var r = encodeURIComponent(top.document.referrer.substring(0,250)),
+        p = encodeURIComponent(top.document.location.href.substring(0,250)),
+        t = Date.now(),
+        u = '39633299-9ffc-4c53-ba0b-ca280162c65a',
+        e = document.createElement('script'),
+        s = sessionStorage.getItem('spoutable-' + u);
+    if (!s) {
+      var m = Math.random.bind(Math);
+      s = JSON.stringify({ sessionId: [ t, m(), m(), m(), m(), m(), m(), m(), m(), m(), m(), m(), m() ]});
+      sessionStorage.setItem('spoutable-' + u, s);
+    }
+    e.async = true;
+    e.src='//s.spoutable.com/s?u='+u+'&s='+encodeURIComponent(s)+'&t='+t+'&r='+r+'&p='+p;
+    document.head.appendChild(e);
+  })();
 </script>
-<script type="text/javascript" src="//st-n.ads3-adnow.com/js/a.js"></script>
-<div id="SC_TBlock_625365" class="SC_TBlock">loading...</div> 
+</body>
+</html>
